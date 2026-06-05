@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 80px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #050505;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-btn {
+    background: #e63946;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+}
+
+.hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.95)),
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1600") center/cover;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.small-title {
+    color: #ff6b00;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 1;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+p {
+    color: #cfcfcf;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 30px;
+    background: #e63946;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.metodo{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.metodo h2{
+    font-size:50px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:#111;
+    padding:40px;
+    border-radius:20px;
+    border:1px solid #222;
+}
+
+.card h3{
+    color:#ff6b00;
+}
+
+.card p{
+    font-size:18px;
+}
+.servizi{
+    padding:100px 8%;
+    text-align:center;
+    background:#0d0d0d;
+}
+
+.servizi h2{
+    font-size:50px;
+    margin-bottom:50px;
+}
+.risultati{
+    padding:100px 8%;
+    text-align:center;
+    background:#050505;
+}
+
+.risultati h2{
+    font-size:50px;
+    margin-bottom:50px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.stats div{
+    background:#111;
+    border:1px solid #222;
+    padding:40px;
+    border-radius:20px;
+}
+
+.stats h3{
+    font-size:60px;
+    color:#e63946;
+    margin:0;
+}
+.chi-sono{
+    padding:100px 8%;
+    background:#0d0d0d;
+}
+
+.about-text{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-text h2{
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+.about-text p{
+    font-size:22px;
+    line-height:1.8;
+}
+.contatti{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.contatti h2{
+    font-size:50px;
+    margin-bottom:40px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    padding:18px;
+    border:none;
+    border-radius:10px;
+    background:#111;
+    color:white;
+    font-size:18px;
+}
+
+textarea{
+    height:150px;
+}
+
+button{
+    padding:18px;
+    border:none;
+    border-radius:10px;
+    background:#e63946;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:40px;
+}

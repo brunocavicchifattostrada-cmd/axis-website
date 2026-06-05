@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>AXIS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">AXIS</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Metodo</a>
+        <a href="#">Servizi</a>
+        <a href="#">Risultati</a>
+        <a href="#" class="nav-btn">Consulenza</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="small-title">METODO AXIS</p>
+        <h1>Costruisci il tuo corpo. Domina la disciplina.</h1>
+        <p>
+            Allenamento personalizzato per chi vuole risultati seri,
+            forza reale e una trasformazione fisica concreta.
+        </p>
+        <a href="#" class="btn">Prenota una consulenza</a>
+    </div>
+</section>
+<section class="metodo">
+    
+    <h2>IL METODO AXIS</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>DISCIPLINA</h3>
+            <p>Costruisci abitudini solide e allenati con costanza.</p>
+        </div>
+
+        <div class="card">
+            <h3>FORZA</h3>
+            <p>Migliora prestazioni, potenza e composizione corporea.</p>
+        </div>
+
+        <div class="card">
+            <h3>TRASFORMAZIONE</h3>
+            <p>Ottieni risultati concreti e misurabili nel tempo.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="servizi">
+
+    <h2>SERVIZI</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Personal Training</h3>
+            <p>Allenamenti 1 a 1 in palestra con correzione tecnica.</p>
+        </div>
+
+        <div class="card">
+            <h3>Programma AXIS</h3>
+            <p>Scheda personalizzata, progressione e controllo dei risultati.</p>
+        </div>
+
+        <div class="card">
+            <h3>Trasformazione</h3>
+            <p>Percorso completo per cambiare corpo, forza e mentalità.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="risultati">
+
+    <h2>RISULTATI REALI</h2>
+
+    <div class="stats">
+
+        <div>
+            <h3>+100</h3>
+            <p>Allenamenti guidati</p>
+        </div>
+
+        <div>
+            <h3>3</h3>
+            <p>Pilastri: forza, metodo, disciplina</p>
+        </div>
+
+        <div>
+            <h3>1</h3>
+            <p>Obiettivo: trasformarti</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="chi-sono">
+
+    <div class="about-text">
+
+        <h2>CHI SONO</h2>
+
+        <p>
+            Sono un personal trainer specializzato nella trasformazione fisica,
+            nell'aumento della forza e nella costruzione di abitudini durature.
+        </p>
+
+        <p>
+            Il metodo AXIS nasce dall'esperienza sul campo e da anni di studio
+            dell'allenamento e della preparazione atletica.
+        </p>
+
+    </div>
+
+</section>
+<section class="contatti">
+
+    <h2>PRENOTA UNA CONSULENZA</h2>
+
+   <form method="POST" action="/contatti">
+
+       <input type="text" name="nome" placeholder="Nome" required>
+
+       <input type="email" name="email" placeholder="Email" required>
+
+        <input type="text" name="telefono" placeholder="Telefono">
+
+        <textarea name="obiettivo" placeholder="Scrivi il tuo obiettivo" required></textarea>
+
+        <button type="submit">
+            INVIA RICHIESTA
+        </button>
+
+    </form>
+
+</section>
+<footer>
+    <h3>AXIS</h3>
+    <p>Forza. Disciplina. Trasformazione.</p>
+    <p>Email: info@axis.it</p>
+</footer>
+</body>
+</html>

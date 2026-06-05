@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <style>
+body{
+    background:#111;
+    color:white;
+    font-family:Arial,sans-serif;
+    padding:40px;
+}
+
+h1{
+    color:#ff4d4d;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#1a1a1a;
+}
+
+th,td{
+    border:1px solid #333;
+    padding:12px;
+}
+
+th{
+    background:#ff4d4d;
+}
+
+tr:hover{
+    background:#222;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>Admin AXIS</title>
+</head>
+<body>
+
+    <h1>Contatti Ricevuti</h1>
+    <a href="/logout">Logout</a>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefono</th>
+            <th>Obiettivo</th>
+        </tr>
+
+        {% for c in contatti %}
+        <tr>
+            <td>{{ c[0] }}</td>
+            <td>{{ c[1] }}</td>
+            <td>{{ c[2] }}</td>
+            <td>{{ c[3] }}</td>
+            <td>{{ c[4] }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>
