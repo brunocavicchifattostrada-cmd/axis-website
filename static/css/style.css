@@ -219,10 +219,11 @@ footer{
     text-align:center;
     padding:40px;
 }
-.foto-bruno{
-    width:350px;
+.foto-mauro{
+    width:200px;
     max-width:100%;
-    border-radius:20px;
     display:block;
-    margin:0 auto 30px;
+    margin:30px auto;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
