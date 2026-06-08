@@ -219,11 +219,49 @@ footer{
     text-align:center;
     padding:40px;
 }
+.chi-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
 .foto-mauro{
-    width:200px;
-    max-width:100%;
-    display:block;
-    margin:30px auto;
+    width:350px;
     border-radius:20px;
     box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.chi-testo{
+    max-width:600px;
+}
+
+.chi-testo h2{
+    color:#ff5f57;
+    margin-bottom:15px;
+}
+
+.chi-testo h3{
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.chi-testo p{
+    margin-bottom:15px;
+    line-height:1.7;
+}
+@media(max-width:768px){
+
+    .chi-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .foto-mauro{
+        width:250px;
+    }
+
 }
