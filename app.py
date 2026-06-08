@@ -5,11 +5,13 @@ app.secret_key = "axis_secret_key"
 
 app.config["MYSQL_HOST"] = "localhost"
 app.config["MYSQL_USER"] = "root"
-app.config["MYSQL_PASSWORD"] = "Stage2026!"
+app.config["MYSQL_PASSWORD"] = ""
 app.config["MYSQL_DB"] = "axis_db"
 
 mysql = MySQL(app)
-
+@app.route("/")
+def home():
+    return render_template("home.html")
 
 @app.route("/admin", methods=["GET", "POST"])
 def admin():
